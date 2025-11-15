@@ -31,10 +31,29 @@
                     <view key="view" contentMode="scaleToFill" id="zxC-Ty-YCb">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRa-OB-qj8">
+                                <rect key="frame" x="152" y="409" width="90" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign Out"/>
+                                <connections>
+                                    <action selector="signOutClicked:" destination="BOC-9l-6at" eventType="touchUpInside" id="BMK-T0-bGl"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="9O1-4x-d16"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iRa-OB-qj8" firstAttribute="top" secondItem="9O1-4x-d16" secondAttribute="top" constant="409" id="4ku-m6-eoy"/>
+                            <constraint firstItem="iRa-OB-qj8" firstAttribute="leading" secondItem="9O1-4x-d16" secondAttribute="leading" constant="152" id="P4g-Sp-npa"/>
+                            <constraint firstItem="iRa-OB-qj8" firstAttribute="centerX" secondItem="zxC-Ty-YCb" secondAttribute="centerX" id="bm9-vc-429"/>
+                            <constraint firstItem="iRa-OB-qj8" firstAttribute="centerY" secondItem="zxC-Ty-YCb" secondAttribute="centerY" id="zTv-kl-8Tb"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="s.circle.fill" catalog="system" id="6k4-Sy-fJX"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toViewController" modalPresentationStyle="fullScreen" id="Q9G-xx-ZsC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pbs-SW-9J7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -107,7 +126,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPP-vn-IN5">
-                                <rect key="frame" x="195" y="332" width="83.999999999999972" height="35"/>
+                                <rect key="frame" x="195" y="366" width="84" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
                                 <connections>
@@ -115,7 +134,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOF-rS-2G2">
-                                <rect key="frame" x="107" y="332" width="76" height="35"/>
+                                <rect key="frame" x="107" y="366" width="76" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign In"/>
                                 <connections>
@@ -144,6 +163,7 @@
                             <constraint firstItem="WAi-fm-gst" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="68" id="yJa-Ox-PZo"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="GKo-Vd-LLg"/>
                     <connections>
                         <outlet property="emailTextField" destination="WAi-fm-gst" id="TdH-jy-GUh"/>
                         <outlet property="passwordTextField" destination="qXU-Lo-WHj" id="CK9-T4-DdG"/>
