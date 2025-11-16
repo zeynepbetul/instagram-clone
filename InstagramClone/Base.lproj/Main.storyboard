@@ -32,23 +32,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRa-OB-qj8">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWy-8G-Xgo">
                                 <rect key="frame" x="152" y="409" width="90" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Out"/>
                                 <connections>
-                                    <action selector="signOutClicked:" destination="BOC-9l-6at" eventType="touchUpInside" id="BMK-T0-bGl"/>
+                                    <action selector="signOutClicked:" destination="BOC-9l-6at" eventType="touchUpInside" id="4Qx-i6-2JS"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9O1-4x-d16"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="iRa-OB-qj8" firstAttribute="top" secondItem="9O1-4x-d16" secondAttribute="top" constant="409" id="4ku-m6-eoy"/>
-                            <constraint firstItem="iRa-OB-qj8" firstAttribute="leading" secondItem="9O1-4x-d16" secondAttribute="leading" constant="152" id="P4g-Sp-npa"/>
-                            <constraint firstItem="iRa-OB-qj8" firstAttribute="centerX" secondItem="zxC-Ty-YCb" secondAttribute="centerX" id="bm9-vc-429"/>
-                            <constraint firstItem="iRa-OB-qj8" firstAttribute="centerY" secondItem="zxC-Ty-YCb" secondAttribute="centerY" id="zTv-kl-8Tb"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="s.circle.fill" catalog="system" id="6k4-Sy-fJX"/>
                     <connections>
