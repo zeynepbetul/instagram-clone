@@ -41,7 +41,17 @@ class ViewController: UIViewController {
     }
 
     @IBAction func signInClicked(_ sender: Any) {
-        performSegue(withIdentifier: "toFeedVC", sender: nil)
+        if emailTextField.text != nil && passwordTextField.text != nil {
+            Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { authdata, error in
+                if error != nil {
+                    self.makeAlert(titleInput: "Error", messageInput: error?.localizedDescription ?? "Error")
+                } else {
+                    self.performSegue(withIdentifier: "toFeedVC", sender: nil)
+                }
+            }
+        } else {
+            makeAlert(titleInput: "Error", messageInput: "Username and password fields cannot be empty")
+        }
     }
 }
 
