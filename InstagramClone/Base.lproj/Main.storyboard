@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.artframe" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MSn-02-WRg">
-                                <rect key="frame" x="76" y="146" width="241" height="225"/>
+                                <rect key="frame" x="75" y="96.666666666666629" width="241" height="225"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="228" id="PiE-2Y-VbZ"/>
                                     <constraint firstAttribute="width" constant="241" id="e8F-0B-c5S"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="comment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YZs-xS-mXw">
-                                <rect key="frame" x="76" y="448" width="240" height="34"/>
+                                <rect key="frame" x="76" y="331" width="240" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="uU5-QD-TkL"/>
                                 </constraints>
@@ -32,7 +32,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kf2-Fd-gwa">
-                                <rect key="frame" x="156.66666666666666" y="574" width="78.666666666666657" height="35"/>
+                                <rect key="frame" x="156" y="397" width="78.666666666666657" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="e5P-cg-lGi"/>
                                 </constraints>
@@ -46,16 +46,16 @@
                         <viewLayoutGuide key="safeArea" id="G45-EM-1EH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Kf2-Fd-gwa" firstAttribute="top" secondItem="YZs-xS-mXw" secondAttribute="bottom" constant="92" id="4Kz-lo-cvI"/>
-                            <constraint firstItem="MSn-02-WRg" firstAttribute="leading" secondItem="YZs-xS-mXw" secondAttribute="leading" id="6ZT-aw-mMF"/>
-                            <constraint firstItem="MSn-02-WRg" firstAttribute="trailing" secondItem="YZs-xS-mXw" secondAttribute="trailing" constant="1" id="7cg-Fp-G9r"/>
+                            <constraint firstItem="Kf2-Fd-gwa" firstAttribute="top" secondItem="YZs-xS-mXw" secondAttribute="bottom" constant="32" id="4Kz-lo-cvI"/>
+                            <constraint firstItem="MSn-02-WRg" firstAttribute="leading" secondItem="YZs-xS-mXw" secondAttribute="leading" constant="-1" id="6ZT-aw-mMF"/>
+                            <constraint firstItem="MSn-02-WRg" firstAttribute="trailing" secondItem="YZs-xS-mXw" secondAttribute="trailing" id="7cg-Fp-G9r"/>
                             <constraint firstItem="YZs-xS-mXw" firstAttribute="centerX" secondItem="Kf2-Fd-gwa" secondAttribute="centerX" id="Fh0-0Y-9rb"/>
-                            <constraint firstItem="G45-EM-1EH" firstAttribute="bottom" secondItem="Kf2-Fd-gwa" secondAttribute="bottom" constant="194" id="IBq-n5-egQ"/>
-                            <constraint firstItem="MSn-02-WRg" firstAttribute="centerX" secondItem="EVn-Ry-UXl" secondAttribute="centerX" id="Oxc-7D-JxJ"/>
-                            <constraint firstItem="MSn-02-WRg" firstAttribute="top" secondItem="G45-EM-1EH" secondAttribute="top" constant="144.33333333333334" id="aZ0-o3-cKR"/>
-                            <constraint firstItem="MSn-02-WRg" firstAttribute="top" secondItem="G45-EM-1EH" secondAttribute="top" constant="144.33333333333334" id="mvB-sG-wfp"/>
-                            <constraint firstItem="YZs-xS-mXw" firstAttribute="top" secondItem="MSn-02-WRg" secondAttribute="bottom" constant="75.666666666666629" id="oiA-Ey-6MT"/>
-                            <constraint firstItem="MSn-02-WRg" firstAttribute="leading" secondItem="G45-EM-1EH" secondAttribute="leading" constant="76" id="qe9-w1-r80"/>
+                            <constraint firstItem="G45-EM-1EH" firstAttribute="bottom" secondItem="Kf2-Fd-gwa" secondAttribute="bottom" constant="371" id="IBq-n5-egQ"/>
+                            <constraint firstItem="MSn-02-WRg" firstAttribute="centerX" secondItem="EVn-Ry-UXl" secondAttribute="centerX" constant="-1" id="Oxc-7D-JxJ"/>
+                            <constraint firstItem="MSn-02-WRg" firstAttribute="top" secondItem="G45-EM-1EH" secondAttribute="top" constant="94.999999999999972" id="aZ0-o3-cKR"/>
+                            <constraint firstItem="MSn-02-WRg" firstAttribute="top" secondItem="G45-EM-1EH" secondAttribute="top" constant="94.999999999999972" id="mvB-sG-wfp"/>
+                            <constraint firstItem="YZs-xS-mXw" firstAttribute="top" secondItem="MSn-02-WRg" secondAttribute="bottom" constant="8" id="oiA-Ey-6MT"/>
+                            <constraint firstItem="MSn-02-WRg" firstAttribute="leading" secondItem="G45-EM-1EH" secondAttribute="leading" constant="75" id="qe9-w1-r80"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="u.circle.fill" catalog="system" id="vMG-iL-5Px"/>
