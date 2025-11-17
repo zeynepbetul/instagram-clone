@@ -33,6 +33,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                 print(error?.localizedDescription)
             } else {
                 if snapshot?.isEmpty != true {
+                    
+                    self.userImageArray.removeAll(keepingCapacity: false)
+                    self.userEmailArray.removeAll(keepingCapacity: false)
+                    self.userCommentArray.removeAll(keepingCapacity: false)
+                    self.likeArray.removeAll(keepingCapacity: false)
+                    
                     for document in snapshot!.documents {
                         let documentID = document.documentID
                         if let postedBy = document.get("postedBy") as? String {
