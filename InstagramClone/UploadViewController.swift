@@ -51,6 +51,10 @@ class UploadViewController: UIViewController, UINavigationControllerDelegate, UI
                             firestoreReference = firestoreDatabase.collection("Posts").addDocument(data: firestorePost, completion: { error in
                                 if error != nil {
                                     self.makeAlert(titleInput: "Error", messageInput: error?.localizedDescription ?? "Error")
+                                } else {
+                                    self.imageView.image = UIImage(systemName: "photo.artframe")
+                                    self.commentTextField.text = ""
+                                    self.tabBarController?.selectedIndex = 0
                                 }
                             })
                             
