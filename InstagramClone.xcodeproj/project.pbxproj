@@ -11,6 +11,7 @@
 		C96059432EC8FE6B00758518 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C96059422EC8FE6B00758518 /* FirebaseAuth */; };
 		C96059452EC8FE6B00758518 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C96059442EC8FE6B00758518 /* FirebaseFirestore */; };
 		C96059472EC8FE6B00758518 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C96059462EC8FE6B00758518 /* FirebaseStorage */; };
+		C96059522ECB892E00758518 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C96059512ECB892E00758518 /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 				C96059472EC8FE6B00758518 /* FirebaseStorage in Frameworks */,
 				C96059432EC8FE6B00758518 /* FirebaseAuth in Frameworks */,
 				C96059452EC8FE6B00758518 /* FirebaseFirestore in Frameworks */,
+				C96059522ECB892E00758518 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +95,7 @@
 				C96059422EC8FE6B00758518 /* FirebaseAuth */,
 				C96059442EC8FE6B00758518 /* FirebaseFirestore */,
 				C96059462EC8FE6B00758518 /* FirebaseStorage */,
+				C96059512ECB892E00758518 /* SDWebImage */,
 			);
 			productName = InstagramClone;
 			productReference = C96059222EC8BFC000758518 /* InstagramClone.app */;
@@ -124,6 +127,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				C960593F2EC8FE6B00758518 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C96059502ECB892E00758518 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C96059232EC8BFC000758518 /* Products */;
@@ -365,6 +369,14 @@
 				minimumVersion = 12.6.0;
 			};
 		};
+		C96059502ECB892E00758518 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.21.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -387,6 +399,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C960593F2EC8FE6B00758518 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		C96059512ECB892E00758518 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C96059502ECB892E00758518 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
