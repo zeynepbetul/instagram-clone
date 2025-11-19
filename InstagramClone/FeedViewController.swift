@@ -73,7 +73,7 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         cell.userEmailLabel.text = userEmailArray[indexPath.row]
         cell.likeCountLabel.text = String(likeArray[indexPath.row])
         cell.commentLabel.text = userCommentArray[indexPath.row]
-        cell.userImageView.sd_setImage(with: URL(string: self.userImageArray[indexPath.row]))
+        cell.userImageView.sd_setImage(with: URL(string: self.userImageArray[indexPath.row]), placeholderImage: UIImage(systemName: "photo"))
         cell.documentIdLabel.text = documentIdArray[indexPath.row]
         return cell
     }
